@@ -1,2 +1,2 @@
 # Scrap
- Scrapiing everything 
+ Scraping everything 

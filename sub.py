@@ -77,7 +77,7 @@ try:
             final_link+=a['href']
     bar.finish()
     r = requests.get(final_link, allow_redirects=True)
-    file = open(find+'.zip', 'wb')
+    file = open(find, 'wb')
     file.write(r.content)
     print('File is saved at ' + file.name)
 except:

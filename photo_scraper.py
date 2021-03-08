@@ -66,7 +66,10 @@ def download_images():
         # open each image link and save the file
         response = requests.get(imagelink)
         
-        imagename = Image_Folder + '/' + data + str(i+1) + '.jpg'
+        #imagename = Image_Folder + '/' + data + str(i+1) + '.jpg'
+        imagename =  Image_Folder + '/' + str(i+1) + '.jpg'
+        
+
         with open(imagename, 'wb') as file:
             file.write(response.content)
 
